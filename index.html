@@ -3,7 +3,8 @@
     <title>Webpage opens itself inside an iframe</title>
   </head>
   <body>
-	<h1>The iframe below loads this page itself:</h1>
+	<h2>Infinitely nested iframe</h2>
+	<p>The iframe below opens this same page. This results in an infinitely nested iframe that continues loading forever. Your device may run out of RAM and become laggy or your browser may crash if this page is kept open for a long time. Otherwise its harmless.</p>
 	<iframe id="nested" width=800px height=500px></iframe>
 	<script>
 		const iframesrc = document.getElementById('nested');
